@@ -8,13 +8,6 @@ local hologram = component.hologram
 
 hologram.clear()
 
-local seed = math.random(0xFFFFFFFF)
-for x = 1, 16 * 3 do
-  for z = 1, 16 * 3 do
-    hologram.fill(x, z, 15 + noise.fbm(x/(16*3) + seed, 1, z/(16*3) + seed) * 28,1)
-  end
-end
-
 local glyphs = {
 ["a"]=[[
 XXXXX
