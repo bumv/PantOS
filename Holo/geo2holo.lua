@@ -28,6 +28,7 @@ do
 end
 
 component.hologram.clear()
+component.hologram.setScale(4)
 for x=ox,sx+ox do
   for z=oz,sz+oz do
     local hx, hz = 1 + x - ox, 1 + z - oz
