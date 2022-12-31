@@ -7,7 +7,7 @@ local shell = require("shell")
 local hologram = component.hologram
 
 hologram.clear()
-hologram.setScale(4)
+hologram.setScale(3)
 local glyphs = {
 ["a"]=[[
 XXXXX
