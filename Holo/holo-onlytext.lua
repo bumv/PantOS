@@ -7,7 +7,6 @@ local shell = require("shell")
 local hologram = component.hologram
 
 hologram.clear()
-hologram.setScale(0.33)
 local glyphs = {
 ["a"]=[[
 XXXXX
@@ -369,7 +368,7 @@ else
   print("No text specified, using default value 'Open Computers'.")
 end
 local text = text .. " "
-
+hologram.setScale(3.9)
 -- Generate one big string that represents the concatenated glyphs for the provided text.
 local value = ""
 for row = 1, 5 do
