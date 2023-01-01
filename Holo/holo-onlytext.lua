@@ -5,8 +5,8 @@ local keyboard = require("keyboard")
 local shell = require("shell")
 local hologram = component.hologram
 hologram.clear()
-local args, options = shell.parse(...)
-hologram.setScale(args[1])
+local args = shell.parse(...)
+hologram.setScale(tonumber(args[2]))
 local glyphs = {
 ["a"]=[[
 XXXXX
@@ -360,8 +360,7 @@ XXXXX
 ]],
 }
 
-local args = shell.parse(...)
-local text = "Open Computers"
+local text = "Free Pantz"
 if args[1] then
   text = tostring(args[1])
 else
