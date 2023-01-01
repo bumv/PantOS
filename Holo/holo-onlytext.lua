@@ -1,7 +1,6 @@
 -- Generates a random heightmap and displays scrolling text above it.
 
 local component = require("component")
-local noise = require("noise")
 local keyboard = require("keyboard")
 local shell = require("shell")
 local hologram = component.hologram
