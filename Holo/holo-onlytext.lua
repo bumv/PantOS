@@ -4,10 +4,7 @@ local component = require("component")
 local keyboard = require("keyboard")
 local shell = require("shell")
 local hologram = component.hologram
-component.hologram.setScale(4)
-hologram.setScale(4) 
 hologram.clear()
-component.hologram.setScale(4)
 hologram.setScale(4)
 local glyphs = {
 ["a"]=[[
