@@ -1,7 +1,7 @@
 local component = require("component")
 local keyboard = require("keyboard")
 print("Press Ctrl+W to stop")
-local driveList = []
+local driveList = {}
 for k,v in component.list() do
     if v == "tape_drive" then
         table.insert(driveList, k)
