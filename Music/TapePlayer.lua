@@ -14,5 +14,6 @@ while true do
             os.exit()
         end
         os.sleep(1)
+    end
 
 
