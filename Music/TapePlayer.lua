@@ -9,6 +9,7 @@ for k,v in component.list() do
 end
 while true do
     local tempaddress = driveList[math.random(#driveList)]
+    os.execute("tape rewind --address='" .. tempaddress .. "'")
     os.execute("tape play --address='" .. tempaddress .. "'")
     for i = 1, 240, 1 do
         if keyboard.isKeyDown(keyboard.keys.w) and keyboard.isControlDown() then
