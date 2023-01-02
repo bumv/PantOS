@@ -8,7 +8,7 @@ for k,v in component.list() do
     end
 end
 while true do
-    os.execute("tape play --address='" + driveList[math.random(#driveList)] + "'")
+    os.execute("tape play --address='" .. driveList[math.random(#driveList)] .. "'")
     for i = 1, 240, 1 do
         if keyboard.isKeyDown(keyboard.keys.w) and keyboard.isControlDown() then
             os.exit()
