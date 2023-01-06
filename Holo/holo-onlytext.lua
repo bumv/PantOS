@@ -420,6 +420,7 @@ for i = 1, math.huge do
         hologram.clear()
         os.exit()
       end
+      print("working")
     end
   end
 end
