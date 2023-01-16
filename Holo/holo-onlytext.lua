@@ -402,7 +402,6 @@ local z = 16*3/2
 
 print("Press Ctrl+W to stop.")
 for i = 1, math.huge do
-  os.sleep(0.1)
   local function col(n)
     return (n - 1 + i) % w + 1
   end
